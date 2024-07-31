@@ -89,7 +89,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-around p-24">
-      <h1 className="text-4xl font-bold">Safe GPT!</h1>
+      <h1 className="text-4xl font-bold">Safe Chat!</h1>
       <div className="w-1/2 h-1/2">
         <p>{message}</p>
       </div>
@@ -100,12 +100,6 @@ export default function Home() {
         className="w-1/2 p-4 border-2 border-gray-300 rounded-lg text-black"
         placeholder="Type something..."
       />
-      <button
-        onClick={submitHandler}
-        className="bg-blue-500 text-white p-4 rounded-lg"
-      >
-        Send
-      </button>
       <p
         className={
           error
@@ -117,6 +111,12 @@ export default function Home() {
           "Any sensitive information you enter will be masked to protect your privacy."
         }
       </p>
+      <button
+        onClick={submitHandler}
+        className="bg-blue-500 text-white p-4 rounded-lg"
+      >
+        Send
+      </button>
     </main>
   );
 }
